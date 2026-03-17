@@ -1,15 +1,13 @@
-public class HelloAppUC3 {
+public class HelloAppUC2 {
     public static void main(String[] args) {
-        String name;
-
-        // Check if user provided an argument
+        
+        // Check if command-line argument is provided
         if (args.length > 0) {
-            name = args[0];
-        } else {
-            name = "World"; // default value
+            String name = args[0];
+            System.out.println("Hello " + name);
+        } 
+        else {
+            System.out.println("Please provide your name as a command-line argument.");
         }
-
-        // Print greeting
-        System.out.println("Hello, " + name + "!");
     }
 }
